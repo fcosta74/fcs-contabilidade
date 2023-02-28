@@ -124,7 +124,7 @@ section {
 }
 
 section.quem-somos {
-    height: 20vh;
+    height: 25vh;
     color: black;
 
 }
@@ -142,7 +142,7 @@ section.quem-somos p {
 }
 
 form {
-    width: 380px;
+    width: 360px;
     margin: 0 auto;
     padding: 10px;
     align-items: center;
@@ -281,7 +281,7 @@ footer .maps {
     }
    
     section.quem-somos{
-        height: 35vh;
+        height: 45vh;
     }
     section.quem-somos p{
         font-size: 1rem;
