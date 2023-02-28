@@ -78,6 +78,7 @@ h3 {
 
 .title{
     margin-bottom: 30px;
+    font-size: 1.5em;
 }
 main section.servicos h3 {
     color: black;
@@ -118,34 +119,30 @@ main section.servicos .container #imagem3 {
 }
 
 section {
-    width: 90%;
+    width: 100%;
     float: left;
-    margin-left: 1em;
 }
 
 section.quem-somos {
-    height: 5vh;
+    height: 20vh;
     color: black;
-    text-align: center;
-    margin-top: 10px;
+
 }
 
 section.quem-somos h3 {
-    text-align: center;
     margin-top: 10px;
     font-size: 30px;
 }
 
 section.quem-somos p {
     line-height: 1.5rem;
-    margin-top: 15px;
     font-size: 1.2rem;
+    width: 80%;
+    margin: 0 2em;
 }
-section.contato{
-    margin-top: 150px;
-}
+
 form {
-    width: 350px;
+    width: 380px;
     margin: 0 auto;
     padding: 10px;
     align-items: center;
@@ -154,7 +151,7 @@ form {
 }
 
 input {
-    width: 90%;
+    width: 100%;
     border-radius: 0.6rem;
     height: 2rem;
     background: rgba(30, 206, 131, 0.1);
@@ -172,7 +169,7 @@ label {
 
 textarea {
     resize: none;
-    width: 90%;
+    width: 100%;
     background: rgba(30, 206, 131, 0.1);
     border-radius: 0.6rem;
     margin-bottom: 0.8rem;
@@ -186,9 +183,9 @@ footer {
 
 
 footer h5 {
-    margin-top: 180vh;
     font-size: 20px;
-
+    text-align: center;
+    margin-top: 5em;
 }
 
 footer .social {
@@ -230,9 +227,6 @@ footer .container {
     border-radius: 1rem;
     width: 40rem;
     align-items: center;
-
-
-
 }
 
 footer .maps {
@@ -299,6 +293,6 @@ footer .maps {
     }
     main section.servicos .container .imagem {
         height: 20vh;
-    
     }
+  
 }
