@@ -126,7 +126,6 @@ section {
 section.quem-somos {
     height: 35vh;
     color: black;
-
 }
 
 section.quem-somos h3 {
@@ -273,6 +272,9 @@ footer .maps {
     footer .container {
         grid-template-columns: 1fr;
         width: 100%;
+    }
+    section.quem-somos {
+    height: 35vh;
     }
 
     section.quem-somos p{
