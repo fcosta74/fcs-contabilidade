@@ -124,7 +124,7 @@ section {
 }
 
 section.quem-somos {
-    height: 40vh;
+    height: 25vh;
     color: black;
 }
 
@@ -283,7 +283,7 @@ footer .maps {
         
     }
     .imgp{
-        height: 35vh;
+        height: 45vh;
     }
     main section.servicos .container .imagem {
         height: 20vh;
