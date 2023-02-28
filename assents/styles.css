@@ -124,20 +124,18 @@ section {
 }
 
 section.quem-somos {
-    height: 25vh;
+    height: 28vh;
     color: black;
 
 }
 
 section.quem-somos h3 {
-    margin-top: 10px;
     font-size: 30px;
 }
 
 section.quem-somos p {
     line-height: 1.5rem;
     font-size: 1.2rem;
-    width: 80%;
     margin: 0 2em;
 }
 
@@ -235,9 +233,6 @@ footer .maps {
     border-radius: 1rem;
     height: 0;
     margin: 10px 10px 10px;
-    
-
-
 }
 
 @media (max-width:900px) {
@@ -281,7 +276,7 @@ footer .maps {
     }
    
     section.quem-somos{
-        height: 45vh;
+        height: 30vh;
     }
     section.quem-somos p{
         font-size: 1rem;
