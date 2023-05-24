@@ -1,0 +1,364 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+body {
+    background-image: url('/imagem/banner.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+nav {
+    width: 100%;
+    max-width: 100%;
+    background-color: rgba(128, 128, 128, 0.822);
+    margin-top: 0;
+    color: white;
+}
+
+nav .logo {
+    float: left;
+    display: block;
+    padding: 16px;
+    font-size: 2rem;
+}
+
+nav a {
+    float: right;
+    text-decoration: none;
+    display: block;
+    padding: 14px 16px;
+    font-size: 1.5rem;
+    color: white;
+}
+
+nav a:hover {
+    transition: 0.5s;
+    color: rgba(255, 255, 255, 0.753);
+}
+
+.imgp{
+    height: 100vh;
+    background-image: url('/imagem/dev.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+
+}
+.texto{
+    width: 100%;   
+    color: white;
+    text-shadow: 2px 2px 5px #333;
+    font-size: 3rem;
+    text-align: center;
+}
+.texto h2{
+    padding-top: 8rem;
+
+}
+.container {
+    width: 100%;
+    margin: 0px auto;
+}
+
+h3 {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: black;
+}
+.qs{
+    margin-bottom: 2rem;
+    color: black;
+    
+}
+
+.title{
+    margin-bottom: 30px;
+    font-size: 1.5em;
+}
+main section.servicos h3 {
+    color: black;
+    text-align: center;
+}
+
+main section.servicos .container {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 25px;
+    cursor: pointer;
+    margin-top: 0;
+    padding: 0;
+    float: right;
+    display: grid;
+
+}
+
+main section.servicos .container .imagem {
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 40vh;
+    transition: 1s;
+    max-width: 100%;
+    width: 100%;
+
+}
+
+main section.servicos .container #imagem1 {
+    background-image: url('/imagem/1.jpg');
+}
+
+main section.servicos .container #imagem2 {
+    background-image: url('/imagem/2.jpg');
+}
+
+main section.servicos .container #imagem3 {
+    background-image: url('/imagem/3.jpg');
+}
+
+section {
+    width: 100%;
+    float: left;
+}
+
+section.quem-somos {
+    height: 25vh;
+    color: black;
+    margin-bottom: 2rem;
+}
+
+section.quem-somos h3 {
+    font-size: 30px;
+}
+
+section.quem-somos p {
+    line-height: 1.5rem;
+    font-size: 1.2rem;
+    margin: 0 2em;
+}
+fieldset{
+    width: 22rem;
+    height: 92vh;
+    border-radius: 10px;
+    border: 3px solid black;
+    margin: 2.5rem auto;
+    font-weight: bold;
+    background: rgba(30, 206, 131, 0.1);
+}
+legend{
+    text-align: center;
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+}
+input {
+    width: 20rem;
+    border-radius: 0.6rem;
+    height: 2.5rem;
+    background: rgba(30, 206, 131, 0.1);
+    box-sizing: border-box;
+    border: 3px solid black;
+    font-size: 1rem;
+    margin: 0.4rem 1rem;
+}
+.filform{
+    padding: 0.5rem;
+    font-size: 1rem;
+}
+label {
+    height: 1.5rem;
+    font-size: 1.2rem;
+    margin: 0 1.3rem;
+}
+
+textarea {
+    resize: none;
+    width: 20rem;
+    background: rgba(30, 206, 131, 0.1);
+    border-radius: 10px;
+    border: 3px solid black;
+    margin: 0 1rem;
+}
+button {
+    background: rgba(30, 206, 131, 0.1);
+    cursor: pointer;
+	border-radius: 10px; 
+    width: 20rem;
+    align-items: center;
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin: 1rem 1rem;
+    height: 3rem;
+    padding: 0.3rem;
+    color: #101026;
+    border: 3px solid black;
+}
+button:hover {
+    background-color: rgb(58, 110, 153);
+    color: #101026;
+}
+/*footer*/
+footer h5 {
+    font-size: 20px;
+    text-align: center;
+    margin-top: 5em;
+}
+footer .social{
+    width: 15rem;
+    margin-right: 5px;
+    align-items: center;
+}
+.social span{
+    display: flex;
+    
+}
+.social img{
+    display: flex;
+    width: 15px;
+    height: 15px;
+    margin: 0 5px;
+    margin-bottom: 1rem;
+}
+footer p{
+    color: black;
+    font-size: 1rem;
+    font-weight: bold;
+}
+footer .container {
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: aquamarine;
+    border-radius: 1rem;
+    width: 40rem;
+    align-items: center;
+}
+
+footer .maps {
+    overflow: hidden;
+    padding-bottom: 40%;
+    border-radius: 1rem;
+    height: 0;
+    margin: 10px 10px 10px;
+    width: 28rem;
+}
+footer h4{
+    text-align: center;
+    margin-top: 1.5rem;
+    font-size: .9rem;
+}
+/* Modal */
+#modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+  
+.modal-content {
+    position: relative;
+    background-color: #fff;
+    margin: 15% auto;
+    padding: 20px;
+    border-radius: 5px;
+    width: 30%;
+}
+#close-button {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.modal-message {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+/* obrigado */
+#main{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-family: Helvetica;
+    color: #101026;
+    margin: 30vh auto;
+}
+.text{
+    font-size: 3rem; 
+}
+.paragrafo{
+    margin: 3rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.btn{
+    padding: 10px 30px;
+    background: #101026;
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    transition: all 0.5s;
+    border: none;
+    border-radius: 10px;
+}
+.btn:hover{
+    border-radius: 20px;
+}  
+@media (max-width:900px) {
+
+    .banner {
+        width: 100%;
+        height: 100%;
+    }
+    .texto{
+        width: 100%;
+        margin-top: 0;
+        text-align: center;
+        margin-left: 0rem;
+    }
+    h2{
+        font-size: 1.5rem;
+    }
+    main section.servicos .container {
+        grid-template-columns: 1fr;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+
+    }
+    nav .menu {
+        display: flex;
+        flex-direction: column;
+        display: none;
+    }
+
+    nav:hover .menu {
+        display: flex;
+    }
+
+
+    footer .container {
+        grid-template-columns: 1fr;
+        width: 100%;
+    }
+    section.quem-somos {
+    height: 45vh;
+    }
+
+    section.quem-somos p{
+        font-size: 1rem;
+        text-align: justify;
+        
+    }
+    .imgp{
+        height: 25vh;
+    }
+    main section.servicos .container .imagem {
+        height: 20vh;
+    }
+  
+}
