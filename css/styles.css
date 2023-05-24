@@ -99,7 +99,6 @@ main section.servicos .container .imagem {
     transition: 1s;
     max-width: 100%;
     width: 100%;
-
 }
 
 main section.servicos .container #imagem1 {
@@ -122,7 +121,6 @@ section {
 section.quem-somos {
     height: 25vh;
     color: black;
-    margin-bottom: 2rem;
 }
 
 section.quem-somos h3 {
@@ -134,12 +132,19 @@ section.quem-somos p {
     font-size: 1.2rem;
     margin: 0 2em;
 }
+
+/* formulário */
+form{
+    margin-top: -3rem;
+}
+
+
 fieldset{
     width: 22rem;
-    height: 92vh;
+    height: 100%;
     border-radius: 10px;
     border: 3px solid black;
-    margin: 2.5rem auto;
+    margin: 1rem auto;
     font-weight: bold;
     background: rgba(30, 206, 131, 0.1);
 }
