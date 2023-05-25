@@ -14,14 +14,12 @@ nav {
     margin-top: 0;
     color: white;
 }
-
 nav .logo {
     float: left;
     display: block;
     padding: 16px;
     font-size: 2rem;
 }
-
 nav a {
     float: right;
     text-decoration: none;
@@ -30,18 +28,15 @@ nav a {
     font-size: 1.5rem;
     color: white;
 }
-
 nav a:hover {
     transition: 0.5s;
     color: rgba(255, 255, 255, 0.753);
 }
-
 .imgp{
     height: 100vh;
     background-image: url('../imagem/dev.png');
     background-size: 100%;
     background-repeat: no-repeat;
-
 }
 .texto{
     width: 100%;   
@@ -52,13 +47,11 @@ nav a:hover {
 }
 .texto h2{
     padding-top: 8rem;
-
 }
 .container {
     width: 100%;
     margin: 0px auto;
 }
-
 h3 {
     text-align: center;
     margin-top: 20px;
@@ -69,9 +62,7 @@ h3 {
 .qs{
     margin-bottom: 2rem;
     color: black;
-    
 }
-
 .title{
     margin-bottom: 30px;
     font-size: 1.5em;
@@ -80,7 +71,6 @@ main section.servicos h3 {
     color: black;
     text-align: center;
 }
-
 main section.servicos .container {
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 25px;
@@ -157,7 +147,6 @@ label {
     font-size: 1.2rem;
     margin: 0 1.3rem;
 }
-
 textarea {
     resize: none;
     width: 20rem;
@@ -328,8 +317,6 @@ footer h4{
     nav:hover .menu {
         display: flex;
     }
-
-
     footer .container {
         grid-template-columns: 1fr;
         width: 100%;
