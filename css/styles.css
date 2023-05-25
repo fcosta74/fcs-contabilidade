@@ -89,9 +89,7 @@ main section.servicos .container {
     padding: 0;
     float: right;
     display: grid;
-
 }
-
 main section.servicos .container .imagem {
     background-size: cover;
     background-repeat: no-repeat;
@@ -100,46 +98,38 @@ main section.servicos .container .imagem {
     max-width: 100%;
     width: 100%;
 }
-
 main section.servicos .container #imagem1 {
     background-image: url('../imagem/1.jpg');
 }
-
 main section.servicos .container #imagem2 {
     background-image: url('../imagem/2.jpg');
 }
-
 main section.servicos .container #imagem3 {
     background-image: url('../imagem/3.jpg');
 }
-
 section {
     width: 100%;
     float: left;
 }
-
 section.quem-somos {
     height: 25vh;
     color: black;
 }
-
 section.quem-somos h3 {
     font-size: 30px;
 }
-
 section.quem-somos p {
     line-height: 1.5rem;
     font-size: 1.2rem;
     margin: 0 2em;
 }
-
 /* formulário */
 fieldset{
     width: 22rem;
     height: 100%;
     border-radius: 10px;
     border: 3px solid black;
-    margin: 21rem auto;
+    margin: 2.5rem auto;
     font-weight: bold;
     background: rgba(30, 206, 131, 0.1);
 }
