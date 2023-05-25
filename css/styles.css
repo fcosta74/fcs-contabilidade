@@ -3,7 +3,7 @@
     margin: 0;
 }
 body {
-    background-image: url('/imagem/banner.jpg');
+    background-image: url('../imagem/banner.jpg');
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -38,7 +38,7 @@ nav a:hover {
 
 .imgp{
     height: 100vh;
-    background-image: url('/imagem/dev.png');
+    background-image: url('../imagem/dev.png');
     background-size: 100%;
     background-repeat: no-repeat;
 
@@ -102,15 +102,15 @@ main section.servicos .container .imagem {
 }
 
 main section.servicos .container #imagem1 {
-    background-image: url('/imagem/1.jpg');
+    background-image: url('../imagem/1.jpg');
 }
 
 main section.servicos .container #imagem2 {
-    background-image: url('/imagem/2.jpg');
+    background-image: url('../imagem/2.jpg');
 }
 
 main section.servicos .container #imagem3 {
-    background-image: url('/imagem/3.jpg');
+    background-image: url('../imagem/3.jpg');
 }
 
 section {
@@ -134,17 +134,12 @@ section.quem-somos p {
 }
 
 /* formulário */
-form{
-    margin-top: -3rem;
-}
-
-
 fieldset{
     width: 22rem;
     height: 100%;
     border-radius: 10px;
     border: 3px solid black;
-    margin: 1rem auto;
+    margin: 2rem auto;
     font-weight: bold;
     background: rgba(30, 206, 131, 0.1);
 }
@@ -201,9 +196,8 @@ button:hover {
 }
 /*footer*/
 footer h5 {
-    font-size: 20px;
+    font-size: 1.5rem;
     text-align: center;
-    margin-top: 5em;
 }
 footer .social{
     width: 15rem;
