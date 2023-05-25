@@ -142,6 +142,9 @@ input {
     padding: 0.5rem;
     font-size: 1rem;
 }
+#name{
+    text-transform: uppercase;
+}
 label {
     height: 1.5rem;
     font-size: 1.2rem;
