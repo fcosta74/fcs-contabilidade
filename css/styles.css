@@ -145,6 +145,9 @@ input {
 #name{
     text-transform: uppercase;
 }
+#email{
+    text-transform: lowercase;
+}
 label {
     height: 1.5rem;
     font-size: 1.2rem;
