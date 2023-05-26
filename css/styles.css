@@ -1,77 +1,70 @@
 * {
     box-sizing: border-box;
     margin: 0;
+    padding: 0;
 }
 body {
     background-image: url('../imagem/banner.jpg');
     background-size: cover;
     background-repeat: no-repeat;
 }
-nav {
-    width: 100%;
+/* header */
+header{
+    background-image: url('../imagem/dev.png');
+    background-size: 100% 100%;
+    background-position: center;
     max-width: 100%;
-    background-color: rgba(128, 128, 128, 0.822);
-    margin-top: 0;
-    color: white;
+    width: 100%;
+    height: 70vh;
 }
-nav .logo {
+.logo {
     float: left;
     display: block;
     padding: 16px;
     font-size: 2rem;
+    position: fixed;
+    color: #101026;
+    font-weight: bold;
 }
-nav a {
-    float: right;
+.menu {    
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+.menu a{
+    float: left;
     text-decoration: none;
     display: block;
     padding: 14px 16px;
-    font-size: 1.5rem;
-    color: white;
+    font-size: 2rem;
+    color: #101026;
+    font-weight: bold;
 }
-nav a:hover {
+.menu a:hover {
     transition: 0.5s;
     color: rgba(255, 255, 255, 0.753);
 }
-.imgp{
-    height: 100vh;
-    background-image: url('../imagem/dev.png');
-    background-size: 100%;
-    background-repeat: no-repeat;
-}
-.texto{
-    width: 100%;   
-    color: white;
+h2{
+    padding-top: 6rem;
+    text-align: center;
+    font-size: 4rem;
     text-shadow: 2px 2px 5px #333;
     font-size: 3rem;
-    text-align: center;
+    width: 100%;
+
 }
-.texto h2{
-    padding-top: 8rem;
-}
+/* main */
 .container {
     width: 100%;
-    margin: 0px auto;
 }
-h3 {
+.texto{
     text-align: center;
-    margin-top: 20px;
-    font-size: 30px;
-    margin-bottom: 20px;
+    margin: 4.5rem 0 2rem;
+    font-size: 1.9rem;
+    font-weight: bold;
     color: black;
 }
-.qs{
-    margin-bottom: 2rem;
-    color: black;
-}
-.title{
-    margin-bottom: 30px;
-    font-size: 1.5em;
-}
-main section.servicos h3 {
-    color: black;
-    text-align: center;
-}
-main section.servicos .container {
+section .container {
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 25px;
     cursor: pointer;
@@ -80,56 +73,60 @@ main section.servicos .container {
     float: right;
     display: grid;
 }
-main section.servicos .container .imagem {
+section .container h3{
+    text-align: center;
+    margin: 1.5rem 0 2rem;
+    font-size: 1.9rem;
+    font-weight: bold;
+    color: black;
+}
+section #imagem{
     background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
     height: 40vh;
     transition: 1s;
     max-width: 100%;
     width: 100%;
 }
-main section.servicos .container #imagem1 {
+section .imagem1 {
     background-image: url('../imagem/1.jpg');
 }
-main section.servicos .container #imagem2 {
+section .imagem2 {
     background-image: url('../imagem/2.jpg');
 }
-main section.servicos .container #imagem3 {
+section .imagem3 {
     background-image: url('../imagem/3.jpg');
 }
 section {
     width: 100%;
     float: left;
 }
-section.quem-somos {
-    height: 25vh;
-    color: black;
-}
-section.quem-somos h3 {
-    font-size: 30px;
-}
-section.quem-somos p {
-    line-height: 1.5rem;
-    font-size: 1.2rem;
-    margin: 0 2em;
+section p{
+    font-size: 1.5rem;
+    text-align: center;
+    letter-spacing: 1px;
+    font-weight: bold;
+    margin: 0 15rem;
 }
 /* formulário */
-fieldset{
-    width: 22rem;
-    height: 100%;
+form{
+    width: 23%;
     border-radius: 10px;
     border: 3px solid black;
-    margin: 2.5rem auto;
+    margin: 0 auto;
     font-weight: bold;
     background: rgba(30, 206, 131, 0.1);
+    margin-bottom: 3rem;
+    box-shadow: 25px 15px 10px 2px  rgba(74, 146, 110, 0.5)
 }
-legend{
+form p{
     text-align: center;
-    font-size: 1.3rem;
-    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    margin: 1rem 1rem;
 }
 input {
-    width: 20rem;
+    width: 23rem;
     border-radius: 0.6rem;
     height: 2.5rem;
     background: rgba(30, 206, 131, 0.1);
@@ -151,11 +148,11 @@ input {
 label {
     height: 1.5rem;
     font-size: 1.2rem;
-    margin: 0 1.3rem;
+    margin: 1rem 1.3rem;
 }
 textarea {
     resize: none;
-    width: 20rem;
+    width: 23rem;
     background: rgba(30, 206, 131, 0.1);
     border-radius: 10px;
     border: 3px solid black;
@@ -165,7 +162,7 @@ button {
     background: rgba(30, 206, 131, 0.1);
     cursor: pointer;
 	border-radius: 10px; 
-    width: 20rem;
+    width: 23rem;
     align-items: center;
     font-size: 1.3rem;
     font-weight: bold;
@@ -180,9 +177,16 @@ button:hover {
     color: #101026;
 }
 /*footer*/
+.footer{
+    margin: 0 auto;
+    width: 40%;
+    
+}
+
 footer h5 {
-    font-size: 1.5rem;
+    font-size: 1.9rem;
     text-align: center;
+    margin-top: 5em;
 }
 footer .social{
     width: 15rem;
@@ -202,17 +206,20 @@ footer .social{
 }
 footer p{
     color: black;
-    font-size: 1rem;
+    font-size: 1.2rem;
     font-weight: bold;
 }
 footer .container {
     margin-top: 2rem;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    background-color: aquamarine;
+    background-color: rgb(160, 209, 193);
+    background-size: 100%;
+    background-repeat: no-repeat;
     border-radius: 1rem;
-    width: 40rem;
+    width: 45rem;
     align-items: center;
+    box-shadow: 25px 15px 10px 2px  rgba(74, 146, 110, 0.5)
 }
 
 footer .maps {
@@ -220,13 +227,14 @@ footer .maps {
     padding-bottom: 40%;
     border-radius: 1rem;
     height: 0;
-    margin: 10px 10px 10px;
-    width: 28rem;
+    width: 32rem;
+    margin: .8rem;
 }
 footer h4{
     text-align: center;
-    margin-top: 1.5rem;
-    font-size: .9rem;
+    margin: 2rem 0 1rem;
+    font-size: 1rem;
+    font-weight: bold;
 }
 /* Modal */
 #modal {
@@ -244,20 +252,23 @@ footer h4{
     position: relative;
     background-color: #fff;
     margin: 15% auto;
-    padding: 20px;
-    border-radius: 5px;
-    width: 30%;
+    padding: 10px;
+    border-radius: 10px;
+    width: 21%;
+    height: 4rem;
 }
 #close-button {
-    color: #aaa;
+    color: #101026;
     float: right;
-    font-size: 28px;
+    font-size: 2rem;
     font-weight: bold;
     cursor: pointer;
 }
-.modal-message {
-    font-size: 18px;
-    margin-bottom: 20px;
+.modal-content p{
+    font-size: 1.1rem;
+    text-align: center;
+    align-items: center;
+    margin: 0.5rem 0;
 }
 /* obrigado */
 #main{

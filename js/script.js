@@ -20,7 +20,7 @@ form.addEventListener("submit", (event) => {
     
     // verificar se o telefone está preenchido
     if (!validatePhone(phoneInput.value, 11)){
-        showModal("Por favor, o telefone precisa ter no mínimo 11 dígitos.")
+        showModal("Por favor, digito o nº do seu telefone")
         return
     }
     // verificar se o e-mail está vázio

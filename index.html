@@ -9,60 +9,51 @@
     <script src="js/script.js" defer></script>
     <title>FCS Contabilida</title>
   </head>
-  <body cz-shortcut-listen="true">
+  <body cz-shortcut-listen="true">    
+    <header id="home">
+      <div class="banner">
+        <nav id="container">
+          <div class="logo">FCS Contabilidade</div>
+          <div class="menu">
+            <a href="#home">Home</a>
+            <a href="#servicos">Serviços</a>
+            <a href="#quem-somos">Quem somos</a>
+            <a href="#contato">Contato</a>            
+          </div>          
+        </nav>
+        <h2>"Qualidade, ética, transparência e integridade."</h>
+      </div>   
+    </header> 
     <main>
-      <header>
-        <div class="banner">
-            <nav>
-            <div class="logo">FCS Contabilidade</div>
-            <div class="menu">
-              <a href="#contato">Contato</a>
-              <a href="#servicos">Serviços</a>
-              <a href="#quem-somos">Quem somos</a>
-              <a href="#home">Home</a>
-            </div>
-              </nav>
-        </div>
-      </header> 
-         <div class="imgp">
-        <div class="texto">
-          <h2>"Qualidade, ética, transparência e integridade."</h>
-        </div> 
-      </div>
-      </div>
-        <section class="servicos" id="servicos">
-          <h3 class="ns">Nossos Serviços</h3>
-          <div class="container">
-            <div>
-              <div class="imagem" id="imagem1"></div>
-              <h3>Contabilidade Fiscal</h3>
-            </div>
-            <div>
-              <div class="imagem" id="imagem2"></div>
-              <h3>Contabilidade Digital</h3>
-            </div>
-            <div>
-              <div class="imagem" id="imagem3"></div>
-              <h3>Contabilidade de Custo</h3>
-            </div>
-            <div>
-      </section>
-      <section class="quem-somos" id="quem-somos">
-
-        <h3 class="qs">Quem Somos</h3>
+      <section class="servicos" id="servicos">
+        <h3 class="texto">Nossos Serviços</h3>
         <div class="container">
           <div>
-            <p>"A FCS Contabilidade vem há mais de uma década no mercado contribuindo para o crescimento das empresas
-                de Salvador e região metropolitana. A FCS Contabilidade, com seus valores sempre seguidos a risca, sem exceções, cumpre com o papel de empresa
-                responsável e capaz de atender bem seus clientes dentro de suas solicitações, mas sempre de acordo com os parâmetros da Lei."
-            </p>
+            <div id="imagem" class="imagem1"></div>
+            <h3>Contabilidade Fiscal</h3>
           </div>
-        </div>
+          <div>
+            <div id="imagem" class="imagem2"></div>
+            <h3>Contabilidade Digital</h3>
+          </div>
+          <div>
+            <div id="imagem" class="imagem3"></div>
+            <h3>Contabilidade de Custo</h3>
+          </div>
+        <div>
+      </section>
+      <section class="quem-somos" id="quem-somos">
+        <h3 class="texto">Quem Somos</h3>
+          <p>"A FCS Contabilidade vem há mais de uma década no mercado contribuindo para o crescimento das empresas
+            de Salvador e região metropolitana. A FCS Contabilidade, com seus valores sempre seguidos a risca, sem exceções, cumpre com o papel de empresa
+            responsável e capaz de atender bem seus clientes dentro de suas solicitações, mas sempre de acordo com os parâmetros da Lei."
+          </p>   
       </section>
       <section class="contato" id="contato">
+        <h3 class="texto">Entre em Contato</h3>
         <form id="form" action="https://api.staticforms.xyz/submit" method="post">
-          <fieldset>
-            <legend>Entre em contato e saiba mais</legend>
+          <form>
+            <p>Envia aqui os seus dados que retornaremos.</p>
             <label>Nome</label>
             <input type="text" name="name" id="name" class="filform" onkeypress="return ApenasLetras(event)" autocomplete="off">
             <label>Telefone</label>
@@ -72,7 +63,7 @@
             <label>Mensagem</label>
             <textarea id="message" class="filform" cols="22" rows="10" autocomplete="off"></textarea>
             <button type="submit" value=Enviar>Enviar</button>
-          </fieldset>  
+          </form>  
           <input type="hidden" name="accessKey" value="e821a7c9-c9c4-414f-bbdc-a0961862c68f">
           <input type="hidden" name="redirectTo" value="https://fcosta74.github.io/fcs-contabilidade/sucesso.html">          
         </form>
@@ -82,11 +73,10 @@
             <span id="close-button">&times;</span>
             <p class="modal-message"></p>     
           </div>
-      </div>  
-        </div>
+        </div>  
       </section>
     </main>
-    <footer id="footer">
+    <footer class="footer">
       <h5>Localização</h5>
       <div class="container grid">
         <div class="maps">
@@ -102,7 +92,7 @@
             <span class="icon icon-instagram"><img src="/icons/instagram.png"><p>@fcscontabilidade</p></span>
         </div>
       </div>
-      <h4 class="fo">FCS Contabilidade - Todos os Direitos Reservado.</h4>>
+      <h4 class="fo">FCS Contabilidade - Todos os Direitos Reservado.</h4>
     </footer>
   </body>  
 </html>
