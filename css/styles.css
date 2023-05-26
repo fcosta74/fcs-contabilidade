@@ -16,7 +16,7 @@ header{
     background-position: center;
     max-width: 100%;
     width: 100%;
-    height: 70vh;
+    height: 80vh;
 }
 nav{
     width: 100%;
@@ -24,6 +24,7 @@ nav{
     display: inline;
     margin: 0;
     padding: 0;
+    height: 3rem;
 }
 .fixed{
     position: fixed;
@@ -34,14 +35,16 @@ nav{
 }
 .scrolled ul li a,
 .scrolled #logo{
-    color: #ffffff98;
+    color: #fff;
+    
 }
 nav #logo {
     float: left;
-    padding: 14px;
-    font-size: 2rem;
+    padding: 10px;
+    font-size: 1.5rem;
     font-weight: bold;
     display: block;
+    text-shadow: 2px 2px 5px #333;
 }
 nav ul{
     float: right;
@@ -52,14 +55,18 @@ nav ul{
 nav ul a{
     display: block;
     text-decoration: none;
-    padding: 14px 16px;
-    font-size: 2rem;
+    padding: 10px 16px;
+    font-size: 1.5rem;
     font-weight: bold;
-
+    text-shadow: 2px 2px 5px #333;
 }
 nav a:hover {
-    transition: 0.5s;
-    color: rgba(255, 255, 255, 0.164);
+    transition: 0.3s;
+    color: aquamarine;
+}
+.scrolled ul li a:hover{
+    transition: 0.3s;
+    color: aquamarine;
 }
 h2{
     padding-top: 6rem;
@@ -75,35 +82,31 @@ h2{
 }
 .texto{
     text-align: center;
-    margin: 4.5rem 0 2rem;
+    margin: 4rem 0 1rem;
     font-size: 1.9rem;
     font-weight: bold;
     color: black;
 }
 section .container {
     grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 25px;
     cursor: pointer;
-    margin-top: 0;
     padding: 0;
     float: right;
     display: grid;
 }
 section .container h3{
     text-align: center;
-    margin: 1.5rem 0 2rem;
-    font-size: 1.9rem;
+    margin: .5rem 0 1rem;
+    font-size: 1.5rem;
     font-weight: bold;
     color: black;
 }
 section #imagem{
-    background-size: cover;
+    background-size: 100% 100%;
     background-position: center;
-    background-repeat: no-repeat;
     height: 40vh;
     transition: 1s;
-    max-width: 100%;
-    width: 100%;
+    margin: 0.5rem;
 }
 section .imagem1 {
     background-image: url('../imagem/1.jpg');
@@ -120,14 +123,14 @@ section {
 }
 section p{
     font-size: 1.5rem;
-    text-align: center;
+    text-align: justify;
     letter-spacing: 1px;
     font-weight: bold;
     margin: 0 15rem;
 }
 /* formulário */
 form{
-    width: 23%;
+    width: 26%;
     border-radius: 10px;
     border: 3px solid black;
     margin: 0 auto;
@@ -142,11 +145,9 @@ form p{
     margin: 1rem 1rem;
 }
 input {
-    width: 23rem;
+    width: 20rem;
     border-radius: 0.6rem;
     height: 2.5rem;
-    background: rgba(30, 206, 131, 0.1);
-    box-sizing: border-box;
     border: 3px solid black;
     font-size: 1rem;
     margin: 0.4rem 1rem;
@@ -168,7 +169,7 @@ label {
 }
 textarea {
     resize: none;
-    width: 23rem;
+    width: 20rem;
     background: rgba(30, 206, 131, 0.1);
     border-radius: 10px;
     border: 3px solid black;
@@ -178,7 +179,7 @@ button {
     background: rgba(30, 206, 131, 0.1);
     cursor: pointer;
 	border-radius: 10px; 
-    width: 23rem;
+    width: 20rem;
     align-items: center;
     font-size: 1.3rem;
     font-weight: bold;
@@ -220,7 +221,7 @@ footer p{
     font-weight: bold;
 }
 footer .container {
-    margin-top: 2rem;
+    margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
     background-color: rgb(160, 209, 193);
@@ -311,36 +312,32 @@ footer h4{
     border-radius: 20px;
 }  
 @media (max-width:900px) {
-
-    .banner {
-        width: 100%;
-        height: 100%;
+    header{
+        height: 40vh;
     }
     .texto{
-        width: 100%;
-        margin-top: 0;
         text-align: center;
-        margin-left: 0rem;
+        margin: 0.5rem;
+        font-size: 1.9rem;
+        font-weight: bold;
+        color: black;
     }
     h2{
         font-size: 1.5rem;
+        padding: 1rem;
     }
     main section.servicos .container {
         grid-template-columns: 1fr;
     }
-
-    nav {
-        display: flex;
-        flex-direction: column;
+    section #imagem{
+        height: 20vh;
 
     }
     nav{
-        display: flex;
-        flex-direction: column;
         display: none;
     }
     form{
-        width: 100%;
+        width: 88%;
     }
     nav:hover .menu {
         display: flex;
