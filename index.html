@@ -4,6 +4,7 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <link rel="stylesheet" href="css/styles.css">
     <link rel="shortcut icon" href="icons/icon-cont.png">
     <script src="js/script.js" defer></script>
@@ -11,18 +12,18 @@
   </head>
   <body cz-shortcut-listen="true">    
     <header id="home">
-      <div class="banner">
-        <nav id="container">
-          <div class="logo">FCS Contabilidade</div>
-          <div class="menu">
-            <a href="#home">Home</a>
-            <a href="#servicos">Serviços</a>
-            <a href="#quem-somos">Quem somos</a>
-            <a href="#contato">Contato</a>            
-          </div>          
-        </nav>
-        <h2>"Qualidade, ética, transparência e integridade."</h>
-      </div>   
+      <div id="header">        
+        <nav id="menu" class="fixed"> 
+          <div id="logo">FCS-Contabilidade</div>          
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#servicos">Serviços</a></li>
+            <li><a href="#quem-somos">Quem somos</a></li>
+            <li><a href="#contato">Contato</a>   </li>
+          </ul>          
+        </nav>       
+      </div>      
+      <h2>"Qualidade, ética, transparência e integridade."</h2>
     </header> 
     <main>
       <section class="servicos" id="servicos">

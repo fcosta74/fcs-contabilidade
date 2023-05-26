@@ -119,4 +119,14 @@ nameInput.addEventListener("keypress", function(e) {
           alert(err.Description);
     }
 }
+$(document).ready(function() {
+  $(window).scroll(function() {
+    const scroll = $(window).scrollTop();
 
+    if (scroll >= 100) {
+      $("#menu").addClass("scrolled");
+    } else {
+      $("#menu").removeClass("scrolled");
+    }
+  });
+});
