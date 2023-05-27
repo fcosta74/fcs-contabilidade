@@ -179,6 +179,10 @@ textarea {
     border: 3px solid black;
     margin: 0 1rem;
 }
+#message{
+    color: black;
+    font-weight: bold;
+}
 button {
     background: rgba(30, 206, 131, 0.1);
     cursor: pointer;
