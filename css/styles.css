@@ -348,15 +348,20 @@ footer h4{
         display: none;
     }
     form{
-        width: 88%;
+        width: 80%;
+    }
+    input,
+    textarea,
+    button {
+        width: 17rem;
     }
     nav:hover .menu {
         display: flex;
     }
     footer .container {
         grid-template-columns: 1fr;
-        width: 90%;
-        margin: 1rem;
+        width: 83%;
+        margin: 1.5rem;
     }
     footer .maps {
         width: 90%;
