@@ -353,7 +353,7 @@ footer h4{
     input,
     textarea,
     button {
-        width: 17rem;
+        width: 15rem;
     }
     nav:hover .menu {
         display: flex;
